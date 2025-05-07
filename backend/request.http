@@ -1,0 +1,25 @@
+@baseUrl = http://localhost:3000
+
+###
+
+# @name getAllTodos
+GET {{baseUrl}}/api/todos
+
+###
+
+POST {{baseUrl}}/api/todos
+Content-Type: application/json
+
+{
+    "name": "Test Todo",
+    "description": "This is a test todo",
+    "location": "Test Location",
+    "date": "2021-01-01"
+}
+
+###
+
+DELETE {{baseUrl}}/api/todos/1
+
+###
+
